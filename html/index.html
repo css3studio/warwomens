@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전쟁과 여성 인권 박물관</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../static/css/style-build.css">
+    <link rel="stylesheet" href="../static/css/style-custom.css">
+</head>
+<body>
+<div id="main-wrap">
+    <header class="bg-red-100">
+        <div class="container mx-auto flex justify-between items-center h-20">
+            <a href="/" class="logo">전쟁과 여성 인권 박물관</a>
+            <ul class="menu-main flex justify-between items-center whitespace-nowrap lg:w-4/6 xl:w-2/3">
+                <li class="relative">
+                    <a class="block text-center xl:text-lg lg:text-sm" href="#">박물관 이용</a>
+                    <ul class="absolute left-1/2 top-20 transform -translate-x-1/2 text-center">
+                        <li class="mb-4"><a href="#">관람예약 및 안내</a></li>
+                        <li class="mb-4"><a href="#">오시는 길</a></li>
+                        <li class="mb-4"><a href="#">뮤지엄샵</a></li>
+                        <li class="mb-4"><a href="#">박물관 소개</a></li>
+                    </ul>
+                </li>
+                <li class="relative">
+                    <a class="block text-center xl:text-lg lg:text-sm" href="#">전시</a>
+                    <ul class="absolute left-1/2 top-20 transform -translate-x-1/2 text-center">
+                        <li class="mb-4"><a href="#">상설전시</a></li>
+                        <li class="mb-4"><a href="#">특별전시</a></li>
+                        <li class="mb-4"><a href="#">온라인 투어</a></li>
+                    </ul>
+                </li>
+                <li class="relative">
+                    <a class="block text-center xl:text-lg lg:text-sm" href="#">아카이브</a>
+                    <ul class="absolute left-1/2 top-20 transform -translate-x-1/2 text-center">
+                        <li class="mb-4 xl:text-base lg:text-xs"><a href="#">이달의 기록</a></li>
+                        <li class="mb-4 xl:text-base lg:text-xs"><a href="#">기록물 이용</a></li>
+                        <li class="mb-4 xl:text-base lg:text-xs"><a href="#">기록물 기증</a></li>
+                    </ul>
+                </li>
+                <li class="relative">
+                    <a class="block text-center xl:text-lg lg:text-sm" href="#">연구/교육</a>
+                    <ul class="absolute left-1/2 top-20 transform -translate-x-1/2 text-center">
+                        <li class="mb-4 text-base"><a href="#">교육신청</a></li>
+                        <li class="mb-4 text-base"><a href="#">교육자료</a></li>
+                        <li class="mb-4 text-base"><a href="#">학술행사</a></li>
+                    </ul>
+                </li>
+                <li class="relative">
+                    <a class="block text-center xl:text-lg lg:text-sm" href="#">소식/참여</a>
+                    <ul class="absolute left-1/2 top-20 transform -translate-x-1/2 text-center">
+                        <li class="mb-4 xl:text-base lg:text-xs"><a href="#">공지사항</a></li>
+                        <li class="mb-4 xl:text-base lg:text-xs"><a href="#">뉴스레터</a></li>
+                        <li class="mb-4 xl:text-base lg:text-xs"><a href="#">자원활동신청</a></li>
+                        <li class="mb-4 xl:text-base lg:text-xs"><a href="#">박물관 후원</a></li>
+                    </ul>
+                </li>
+                <li class="relative">
+                    <a class="block text-center xl:text-lg lg:text-sm" href="#">박물관 소개</a>
+                    <ul class="absolute left-1/2 top-20 transform -translate-x-1/2 text-center">
+                        <li class="mb-4 xl:text-base lg:text-xs"><a href="#">인사말</a></li>
+                        <li class="mb-4 xl:text-base lg:text-xs"><a href="#">미션비전</a></li>
+                        <li class="mb-4 xl:text-base lg:text-xs"><a href="#">연혁</a></li>
+                        <li class="mb-4 xl:text-base lg:text-xs"><a href="#">기부자의 벽</a></li>
+                    </ul>
+                </li>
+                <li class="buttons">
+                    <a class="bg-aa-purple-500 inline-block px-7 lg:px-5 py-3.5 lg:py-2 lg:text-sm text-white rounded-sm text-center" href="#">박물관 이용</a>
+                    <a class="inline-block border border-aa-purple-500 text-aa-purple-500 px-7 lg:px-5 py-3.5 lg:py-2 lg:text-sm rounded-sm text-center" href="#">후원하기</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="contents-area">
+        <div x-data="{swiper: null}"
+        x-init="swiper = new Swiper($refs.container, {
+            loop: true,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+              },
+            })"
+        class="relative"
+        >
+            <div class="absolute left-10 bottom-6 z-20 flex">
+                <button @click="swiper.slidePrev()"
+                        class="flex justify-center text-white hover:text-aa-purple-500">
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        이전 배너 제목
+                </button>
+            </div>
+
+            <div class="swiper-container" x-ref="container">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="bg-no-repeat bg-cover bg-center flex items-center relative" style="height:42.5rem;background-image:url(https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80)">
+                            <div class="w-full h-full absolute top-0 left-0 bg-black opacity-30"></div>
+                            <div class="container mx-auto relative">
+                                <div class="text-white">
+                                    <b class="mb-2 font-normal">2020. 08. 17. - 11. 27.</b>
+                                    <dl class="mb-8">
+                                        <dt class="font-serif font-bold text-6xl leading-tight mb-2">그날의 목소리</dt>
+                                        <dd>故김학순 공개증언 30주년 기념전시</dd>
+                                    </dl>
+                                    <a href="#" class="inline-block px-7 py-3.5 bg-aa-purple-500 hover:bg-black">전시 소개 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-no-repeat bg-cover bg-center flex items-center" style="height:42.5rem;background-image:url(https://images.unsplash.com/photo-1598951092651-653c21f5d0b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80)">
+                            <div class="w-full h-full absolute top-0 left-0 bg-black opacity-30"></div>
+                            <div class="container mx-auto relative">
+                                <div class="text-white">
+                                    <b class="mb-2 font-normal">2020. 08. 17. - 11. 27.</b>
+                                    <dl class="mb-8">
+                                        <dt class="font-serif font-bold text-6xl leading-tight mb-2">그날의 목소리</dt>
+                                        <dd>故김학순 공개증언 30주년 기념전시</dd>
+                                    </dl>
+                                    <a href="#" class="inline-block px-7 py-3.5 bg-aa-purple-500 hover:bg-black">전시 소개 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-no-repeat bg-cover bg-center flex items-center" style="height:42.5rem;background-image:url(https://images.unsplash.com/photo-1598946423291-ce029c687a42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80)">
+                            <div class="w-full h-full absolute top-0 left-0 bg-black opacity-30"></div>
+                            <div class="container mx-auto relative">
+                                <div class="text-white">
+                                    <b class="mb-2 font-normal">2020. 08. 17. - 11. 27.</b>
+                                    <dl class="mb-8">
+                                        <dt class="font-serif font-bold text-6xl leading-tight mb-2">그날의 목소리</dt>
+                                        <dd>故김학순 공개증언 30주년 기념전시</dd>
+                                    </dl>
+                                    <a href="#" class="inline-block px-7 py-3.5 bg-aa-purple-500 hover:bg-black">전시 소개 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute right-10 bottom-6 z-20 flex">
+                <button @click="swiper.slideNext()"
+                        class="flex justify-center text-white hover:text-aa-purple-500">
+                        다음 배너 제목
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div class="swiper-pagination z-10"></div>
+        </div>
+    </div>
+</div>
+<script src="//unpkg.com/alpinejs" defer></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</body>
+</html>
