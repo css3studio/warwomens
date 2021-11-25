@@ -5,6 +5,8 @@ html {
     color:#404040;
 }
 
+#skip-link a:focus{top:0}
+
 header .logo{
     display:block;
     width:17.25rem;

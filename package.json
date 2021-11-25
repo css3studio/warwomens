@@ -6,7 +6,7 @@
     "tailwindcss": "^2.2.19"
   },
   "scripts": {
-    "build": "postcss static/css/style.css -o static/css/style-build.css"
+    "build": "postcss assets/css/style.css -o assets/css/style-build.css"
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.2.2"
