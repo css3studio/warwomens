@@ -75,7 +75,7 @@
                         <li><a class="block py-3 text-center hover:bg-aa-gray-100" href="#">박물관 후원</a></li>
                     </ul>
                 </li>
-                <li class="relative xl:mr-7 lg:mr-5 border-b lg:border-none border-aa-gray-300">
+                <li class="relative xl:mr-14 lg:mr-11 border-b lg:border-none border-aa-gray-300">
                     <a class="block lg:text-center text-lg leading-6 lg:leading-7 py-4 lg:px-0" x-on:mouseover="megaMenu = true" href="#">박물관 소개</a>
                     <ul class="lg:absolute left-1/2 top-20 text-gray-700 transform -translate-x-1/2 text-center z-20" x-on:mouseover="megaMenu = true" x-show="megaMenu">
                         <li><a class="block py-3 text-center hover:bg-aa-gray-100" href="#">인사말</a></li>
@@ -84,8 +84,15 @@
                         <li><a class="block py-3 text-center hover:bg-aa-gray-100" href="#">기부자의 벽</a></li>
                     </ul>
                 </li>
+                <li class="relative xl:mr-7 lg:mr-5 border-b lg:border-none border-aa-gray-300">
+                    <a class="block lg:text-center text-lg leading-6 lg:leading-7 py-4 lg:px-0 flex" href="#">
+                        검색
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </a>
+                </li>
                 <li class="buttons xl:block hidden">
-                    <a class="bg-aa-purple-500 inline-block px-7 py-3.5 text-white rounded-sm text-center mr-2" href="#">관람예약</a>
                     <a class="inline-block border border-white text-white px-7 py-3.5 rounded-sm text-center box-border" :class="{ 'border-aa-purple-500 text-aa-purple-500': megaMenu }" href="#">후원하기</a>
                 </li>
             </ul>
@@ -302,7 +309,7 @@
                     </a>
                 </div>
             </div>
-            <div class="lg:absolute lg:left-1/2 lg:top-0 lg:h-full h-80 lg:w-1/2 bg-no-repeat bg-contain bg-center" style="background-image:url(../images/bg-main-welcome.png)"></div>
+            <div class="lg:absolute lg:left-1/2 lg:top-0 lg:h-full h-80 lg:w-1/2 bg-no-repeat bg-cover bg-center" style="background-image:url(../images/bg-main-welcome.png)"></div>
         </div>
         <!-- //환영 -->
         <!-- 상설전시 / 특별전시 -->
