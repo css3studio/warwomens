@@ -37,6 +37,10 @@ module.exports = {
         'aa-red-500': '#EF4444',
         'aa-yellow-400': '#FBBF24',
       },
+      spacing: {
+        'aa-1/4': '23.79%',
+        'aa-1/4-gap': '1.6129%',
+      },
       fontFamily: {
         sans: ["Spoqa Han Sans Neo", "sans-serif"],
         serif: ["Noto Serif KR", "serif"],

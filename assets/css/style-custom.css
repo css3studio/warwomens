@@ -49,7 +49,6 @@ header.header-main .logo{
     width:4.5333333333%
 }
 
-
 footer .logo{
     display:block;
     width:21.5rem;
@@ -58,6 +57,25 @@ footer .logo{
     background-size:contain;
     text-indent:-9999px;
 }
+
+.list-gallary01{
+    gap:2.5rem 1.6129% ;
+}
+.list-gallary01 > li{
+    width:23.79%;
+}
+.list-gallary01 > li > span:first-of-type{
+    padding-bottom:141.35%;
+}
+
+
+.list-board01 >  li > a > span:last-of-type{
+    flex-basis:24%;
+}
+.list-board01 >  li > a > span:last-of-type >span{
+    padding-bottom:67.8%;
+}
+
 
 
 
