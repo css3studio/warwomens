@@ -41,6 +41,9 @@ header.header-main .logo{
 .main-slider .swiper-slide > div{
     height:42.5rem;
 }
+.item-slider .swiper-slide > div{
+    height:42.5rem;
+}
 
 .masonry01 .grid-item, .masonry01 .grid-sizer{
     width:21.6%
@@ -108,6 +111,9 @@ select {
         height:40px;
     }
     .main-slider .swiper-slide > div{
+        height:634px;
+    }
+    .main-slider .item-slide > div{
         height:634px;
     }
 
