@@ -77,6 +77,19 @@ footer .logo{
 .list-gallary02 > li > span:first-of-type{
     padding-bottom:118.66%;
 }
+.list-gallary03 > div{
+    padding-bottom:100%;
+}
+.list-gallary03 > ul{
+    gap:4%;
+}
+.list-gallary03 > ul > li{
+    width:48% !important;
+    padding-bottom:50%;
+    margin-bottom:4%;
+}
+
+
 
 
 .list-board01 >  li > a > span:last-of-type{
