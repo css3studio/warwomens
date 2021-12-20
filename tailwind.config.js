@@ -36,6 +36,7 @@ module.exports = {
         'aa-green-500': '#10B981',
         'aa-red-500': '#EF4444',
         'aa-yellow-400': '#FBBF24',
+        'aa-red': '#A22E2E',
       },
       spacing: {
         'aa-1/4': '23.79%',
