@@ -31,6 +31,7 @@ module.exports = {
         'aa-gray-800': '#262626',
         'aa-gray-900': '#171717',
         'aa-purple-50': '#E7D8FF',
+        'aa-purple-400': '#AB8CF7',
         'aa-purple-500': '#8A64EA',
         'aa-purple-600': '#7045DE',
         'aa-green-500': '#10B981',
