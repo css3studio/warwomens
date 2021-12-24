@@ -82,14 +82,14 @@ header.header-main .logo{
     background-image:url(/images/bg-education-finished.png)
 }
 
-
+/*
 .masonry01 .grid-item, .masonry01 .grid-sizer{
     width:21.6%
 }
 .masonry01 .gutter-sizer{
     width:4.5333333333%
 }
-
+*/
 footer .logo{
     display:block;
     width:21.5rem;
@@ -186,23 +186,25 @@ select {
     html {
         font-size:14px
     }
+    /*
     .masonry01 .grid-item, .masonry01 .grid-sizer{
         width:48%
     }
     .masonry01 .gutter-sizer{
         width:4%
     }
+    */
     .list-gallary02 > li{
         width:47.5%;
     }
     /*
     .list-board02 >  li > a > span:first-of-type{
         flex-basis:40%;
-    }    
+    }
     */
     .education-finished > dl > dd{
         height:300px;
-    }    
+    }
 }
 
 /* 태블릿 모드 세로 */
