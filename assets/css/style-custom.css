@@ -21,7 +21,24 @@ header.header-main .logo{
 
 .menu-main > li > ul{
     display:block;
+    overflow: visible;
 }
+.menu-main > li > ul li a{
+    position:relative;
+    display:block;
+}
+.menu-main > li > ul li a:hover:before{
+    content:"";
+    display:block;
+    width:calc(100% + 20px);
+    height:100%;
+    position:absolute;
+    left:-10px;
+    top:0;
+    background:#F5F5F5;
+    z-index:-1;
+}
+
 /* swiper */
 .swiper-pagination.swiper-pagination-bullets{
     bottom:1.5rem;
