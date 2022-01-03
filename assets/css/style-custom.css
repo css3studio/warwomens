@@ -61,7 +61,7 @@ header.header-main .logo{
 .item-slider .swiper-slide > div{
     height:42.5rem;
 }
-.exhibit-slider .swiper-slide > div{
+.exhibit-slider .swiper-slide > div > div:first-of-type{
     height:28.125rem;
 }
 .pager-thumb01 li.current a{
@@ -179,7 +179,9 @@ select {
     .main-slider .item-slide > div{
         height:634px;
     }
-
+    .exhibit-slider .swiper-slide > div > div:first-of-type{
+        height:203px;
+    }
 }
 /*모바일 폰*/
 @media screen and (min-width: 320px) and (max-width: 767px) {
